@@ -50,7 +50,7 @@ document.addEventListener('click', e=>{
 
 checkoutBtn.addEventListener('click', ()=>{
   if(Object.keys(cart).length===0){ alert('Coșul este gol'); return; }
-  const GOOGLE_FORM_BASEURL = 'https://docs.google.com/forms/d/e/FORM_ID/formResponse'; // aici pui linkul tău
+  const GOOGLE_FORM_BASEURL = 'https://docs.google.com/forms/d/e/1FAIpQLSe1NQ4YY0WyA8jbHmnIT4f3G/formResponse'; // aici pui linkul tău
   const orderText = Object.entries(cart).map(([id,qty])=>{
     const p = PRODUCTS.find(x=>x.id===id);
     return `${p.title} x${qty}`;
